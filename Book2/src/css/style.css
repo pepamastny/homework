@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main {
+    padding-top: 140px;
+    padding-bottom: 230px;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-book {
+    width: 50%;
+}
+
+.about-book img {
+    width: 100%;
+}
+
+.about-text {
+    width: 50%;
+    font-family: Tahoma;
+    align-items: center;
+}
+
+.about-headline {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    display: block;
+}
+
+.about-subheadline {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.about-desc {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    line-height: 27px;
+    display: block;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: 400;
+    color: #313131;
+    display: block;
+    margin-bottom: 80px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 20px 60px;
+    margin-right: 40px;
+    border-radius: 5px;
+}
+
+.blue {
+    border: 1px solid #4572d7;
+    background-color: #4572d7;
+    color: #fff;
+}
+
+.white {
+    color: #4572d7;
+    border: 2px solid #4572d7;
+}
+
+
+
+
+.ship {
+    background-color: #f2f2f2;
+    padding-top: 90px;
+    padding-bottom: 100px;
+}
+
+.ship-headline {
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    display: block;
+    margin-bottom: 90px;
+}
+
+.ship-wrap {
+    display: flex;
+    text-align: center;
+}
+
+.ship-item {
+    width: 25%;
+}
+
+.ship-item span {
+    display: block;
+    color: #333333;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: center;
+}
+
+.ship-item img {
+    margin-bottom: 15px;
+}
+
+
+
+
+.people {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.people-headline {
+    display: block;
+    color: #333333;
+    font-family: Tahoma;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.people-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.people-block {
+    width: 24%;
+    margin-bottom: 40px;
+}
+
+.people-block img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+
+
+
+@media (max-width: 1080px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn {
+        display: inline-block;
+        max-width: 250px;
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .price {
+        margin-bottom: 50px;
+    }
+
+    .main {
+        padding-bottom: 130px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-book, .about-text {
+        width: 100%;
+    }
+
+    .about-text {
+        order: 1;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .main {
+        padding-top: 100px;
+    }
+
+    .ship-wrap {
+        flex-wrap: wrap;
+    }
+
+    .ship-item {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .ship {
+        padding-bottom: 50px;
+    }
+
+    .people {
+        padding-top: 50px;
+        padding-bottom: 70px;
+    }
+
+    .people-block {
+        width: 48%;
+    }
+}
